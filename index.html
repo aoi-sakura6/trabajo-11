@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tienda Tecnológica</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <h1 class="titulo">TIENDA TECNOLÓGICA</h1>
+
+    <!-- SVG -->
+    <svg width="120" height="120">
+        <circle cx="60" cy="60" r="40"></circle>
+    </svg>
+
+    <!-- FORMULARIO -->
+    <div class="formulario">
+        <input type="text" id="producto" placeholder="Nombre del producto">
+        <input type="number" id="precio" placeholder="Precio">
+        <input type="number" id="cantidad" placeholder="Cantidad">
+
+        <button onclick="registrarProducto()">
+            Registrar
+        </button>
+    </div>
+
+    <!-- 🖼️ GALERÍA -->
+    <div class="galeria">
+        <h3>Modelos disponibles</h3>
+
+        <div class="productos">
+
+            <div class="producto">
+                <img src="imag1.jpg" alt="Celular 1">
+                <p>Smartphone A</p>
+            </div>
+
+            <div class="producto">
+                <img src="imag2.jpg" alt="Celular 2">
+                <p>iPhone Style</p>
+            </div>
+
+            <div class="producto">
+                <img src="imag5.jpg" alt="Celular 3">
+                <p>Samsung Galaxy</p>
+            </div>
+
+            <div class="producto">
+                <img src="imag 3.jpg" alt="Celular 3">
+                <p>Motorola</p>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- RESULTADO -->
+    <div id="resultado"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
