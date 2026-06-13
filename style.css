@@ -1,0 +1,115 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:linear-gradient(135deg,#d8a3d5,#9c88c0);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:20px;
+}
+
+/* CONTENEDOR */
+.contenedor{
+    width:100%;
+    max-width:500px;
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    text-align:center;
+}
+
+/* TITULO */
+.titulo{
+    color:#cc00b1;
+    margin-bottom:15px;
+    font-size: clamp(18px, 5vw, 32px);
+    text-align:center;
+}
+
+/* SVG */
+svg{
+    margin-bottom:15px;
+}
+
+/* FORMULARIO */
+.formulario{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input{
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:8px;
+}
+
+/* BOTON */
+button{
+    padding:10px;
+    border:none;
+    background:#7000cc;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* GALERIA */
+.galeria{
+    margin-top:20px;
+}
+
+.productos{
+    display:flex;
+    gap:12px;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.producto{
+    flex:1 1 30%;
+    min-width:140px;
+    background:#f5f5f5;
+    padding:10px;
+    border-radius:10px;
+    text-align:center;
+}
+
+/* 🖼️ IMÁGENES RESPONSIVE */
+.producto img{
+    width:100%;
+    max-width:180px;
+    height:160px;
+    object-fit:cover;
+    border-radius:8px;
+    display:block;
+    margin:0 auto;
+}
+
+/* RESULTADO */
+#resultado{
+    margin-top:20px;
+    text-align:left;
+}
+
+/* 📱 RESPONSIVE */
+@media (max-width:600px){
+
+    .contenedor{
+        max-width:95%;
+    }
+
+    .productos{
+        flex-direction:column;
+    }
+
+    .producto{
+        flex:1 1 100%;
+    }
+}
